@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100vh;
+}
+.super-main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    rgb(21, 7, 24) 11%,
+    hsl(315deg 100% 27%) 22%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(337deg 100% 43%) 44%,
+    hsl(357deg 91% 59%) 56%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(34deg 100% 53%) 78%,
+    hsl(45deg 100% 50%) 89%,
+    hsl(55deg 100% 50%) 100%
+  );
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+#logo {
+  width: 40%;
+}
+.box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  overflow-y: scroll;
+}
+#panel {
+  width: 100%;
+  height: auto;
+  background-color: #2b2c2d;
+  box-shadow: -3px 10px 58px 13px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: -3px 10px 58px 13px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: -3px 10px 58px 13px rgba(0, 0, 0, 0.67);
+  padding: 20px;
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: flex-start;
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.hint {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: #886b02;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: -3px 10px 58px 13px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: -3px 10px 58px 13px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: -3px 10px 58px 13px rgba(0, 0, 0, 0.67);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: #fff;
+}
+.box-letter {
+  width: 55px;
+  height: 55px;
+  background-color: rgb(196, 191, 191);
+  border-radius: 20px;
+  margin: 7px 1px;
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: 900;
+}
+.box-word {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-right: 25px;
+}
+.box-add {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box-input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+#participants-input {
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+.container-hints div {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.container-help-letters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
+}
+.abc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.consonants {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.vowels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+}
+.help-letters {
+  background: green;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+  font-weight: bold;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #111;
+}
+.help-letters:hover {
+  cursor: pointer;
+  font-size: 1.3em;
+  background: rgb(2, 211, 2);
+}
+
+button {
+  background: #2f0069;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1em;
+}
+button:hover {
+  background: #4a03a1;
+}
+select {
+  width: 110px;
+  height: 110px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #2b2c2d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+}
+select:hover {
+  cursor: pointer;
+  background-color: #414344;
+}
+#show-selection {
+  margin-left: 15px;
+}
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  line-height: 3;
+}
+.small {
+  font-size: 12px;
+}
+.container-input-definition {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+#input-definition {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.67);
+  padding: 10px;
+  resize: none;
+  height: 200px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3;
+  border: none;
+  outline: none;
+}
+#input-definition:focus {
+  border: none;
+}
+#lucky {
+  position: relative;
+  bottom: 80px;
+  left: 75%;
+}
+.disabled {
+  background: #390530;
+  color: #fff;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #2b2c2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: #fff;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#participants {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.box-participants {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.box-participants button {
+  margin-top: 35px;
+}
+.box-participants button {
+  margin-left: 30px;
+}
+.box-config {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#play-participants-list li {
+  padding: 5px 10px;
+}
+.active {
+  background: green;
+}
+.vowel {
+  margin-left: 10px;
+}
